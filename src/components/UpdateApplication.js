@@ -59,7 +59,7 @@ const UpdateApplication = () => {
     return (
         <div id="create-application">
             <h2>Update an application</h2>
-            <form action="/">
+            <form action="/" onSubmit={onSubmit}>
                 <div>
                     <label className="first-labels">Name*: </label>
                     <input type="text" value={formData.name} name="name" required className="input-height" onChange={handleChange} />
@@ -110,7 +110,7 @@ const UpdateApplication = () => {
                     <input type="checkbox" name="studyFromHome" checked={formData.studyFromHome} onChange={handleChange} />
                     <label id="study-from-home-label">Study from home</label>
                 </div>
-                <a href="/" onClick={onSubmit}><button>Update</button></a>
+                <button>Update</button>
             </form>
         </div>
     );
