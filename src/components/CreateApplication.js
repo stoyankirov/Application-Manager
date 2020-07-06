@@ -105,7 +105,7 @@ const CreateApplication = () => {
                     <input type="checkbox" name="studyFromHome" checked={formData.studyFromHome} onChange={handleChange} />
                     <label id="study-from-home-label">Study from home</label>
                 </div>
-                <a href="/"><button>Create</button></a>
+                <button>Create</button>
             </form>
         </div>
     );
